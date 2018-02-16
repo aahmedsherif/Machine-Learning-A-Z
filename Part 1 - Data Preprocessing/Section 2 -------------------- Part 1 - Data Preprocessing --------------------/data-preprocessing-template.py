@@ -26,7 +26,7 @@ labelEncoder_X = LabelEncoder()
 X[:,0] = labelEncoder_X.fit_transform(X[:,0])
 oneHotEncoder = OneHotEncoder(categorical_features = [0])
 X = oneHotEncoder.fit_transform(X).toarray()
-
+# Encode the dependent variable
 labelEncoder_y = LabelEncoder()
 y = labelEncoder_y.fit_transform(y)
 """
